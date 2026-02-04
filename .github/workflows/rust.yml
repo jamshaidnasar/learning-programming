@@ -20,7 +20,7 @@ jobs:
       working-directory: rust
       run: cargo build --verbose
     - name: Cargo Run
-      run: cargo run
+      run: cd rust && cargo run
     - name: Run tests
       working-directory: rust
       run: cargo test --verbose
