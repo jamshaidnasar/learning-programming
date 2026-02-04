@@ -19,6 +19,8 @@ jobs:
     - name: Build
       working-directory: rust
       run: cargo build --verbose
+    - name: Cargo Run
+      run: cargo run
     - name: Run tests
       working-directory: rust
       run: cargo test --verbose
